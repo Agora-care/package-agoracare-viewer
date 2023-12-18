@@ -48,6 +48,8 @@ Then you can use the `agoracare-viewer` custom element like this:
 </agoracare-viewer>
 ```
 
+The `agoracareId` is in the format `XXXX-XXX-XXXX`.
+
 You can add the metadata Content-Security-Policy to allow the AgoraCare Viewer to load the series from the AgoraCare API:
 
 ```html
@@ -60,4 +62,4 @@ You can find an example of the AgoraCare Viewer in the `example` folder.
 
 The folder will contain an `index.html` file that will load the `agoracare-viewer` custom element and will connect to the Agora Care IDP.
 
-A `.devcontainer` folder is also available to run the example in a Docker container. You can find more information about the Visual Studio Code Remote - Containers extension [here](https://code.visualstudio.com/docs/remote/containers).
+A `.devcontainer` folder is also available to run the example in a Docker container. You can find more information about the Visual Studio Code Remote - Containers extension [here](https://code.visualstudio.com/docs/remote/containers). This example connects with the dev oidc client, and only users marked as dev users can connect using this client. User AC-1111-111-1115 is a dev user.
