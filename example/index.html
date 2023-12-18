@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.agoracare.ch; script-src 'self'; script-src-elem 'self' package.agoracare.ch 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' 'sha512-rdbkxE9Yeq45VbTj7Br2sC9VReiwslheRNBm1RnTIqJmJqttroaqkhMU6bjfcUWthhVjL2Ol3PC1CPoXvEjwwA=='; img-src blob:; style-src 'self' package.agoracare.ch;" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/oidc-client-ts/2.0.2/browser/oidc-client-ts.min.js" integrity="sha512-rdbkxE9Yeq45VbTj7Br2sC9VReiwslheRNBm1RnTIqJmJqttroaqkhMU6bjfcUWthhVjL2Ol3PC1CPoXvEjwwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/example/script/index.js" type="module"></script>
+  <script src="https://package.agoracare.ch/agoracareviewer.min.js" type="module"></script>
+  <title>Example</title>
+</head>
+
+<body>
+  <div
+    class="input-container"
+  >
+    <button id="logout-button">Se déconnecter</button>
+    <label for="series">
+      Serie
+      <select id="series"></select>
+    </label>
+  </div>
+  <div
+    id="agoracare-viewer-container"
+    class="agoracare-viewer-container"
+  >
+  </div>
+</body>
+
+</html>
