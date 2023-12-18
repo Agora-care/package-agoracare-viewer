@@ -39,8 +39,6 @@ Then you can use the `agoracare-viewer` custom element like this:
 
 ```html
 <agoracare-viewer
-  id="agoracare-viewer"
-  class="agoracare-viewer"
   access-token="${accessToken}"
   agoracare-id="${agoracareId}"
   study-series="${studyInstanceUID}-${seriesInstanceUID}"
@@ -50,7 +48,7 @@ Then you can use the `agoracare-viewer` custom element like this:
 
 The `agoracareId` is in the format `XXXX-XXX-XXXX`.
 
-You can add the metadata Content-Security-Policy to allow the AgoraCare Viewer to load the series from the AgoraCare API:
+The following permission for the Content-Security-Policy are required to allow the AgoraCare Viewer to load the series using the AgoraCare API:
 
 ```html
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.agoracare.ch; script-src-elem https://package.agoracare.ch; img-src blob:; style-src 'self' https://package.agoracare.ch;" />
